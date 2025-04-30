@@ -1,0 +1,42 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vape Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🔥 Vape Store</h1>
+  </header>
+
+  <main class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/200x150.png?text=Blueberry+Ice" alt="Blueberry Ice" />
+      <h2>Blueberry Ice</h2>
+      <p>50 lei</p>
+      <button onclick="addToCart('Blueberry Ice', 50)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/200x150.png?text=Mango+Passion" alt="Mango Passion" />
+      <h2>Mango Passion</h2>
+      <p>55 lei</p>
+      <button onclick="addToCart('Mango Passion', 55)">Add to Cart</button>
+    </div>
+
+    <!-- Add more products as needed -->
+  </main>
+
+  <aside id="cart">
+    <h3>🛒 Cart</h3>
+	<ul id="cart-items"></ul>
+    <p>Total: <span id="total">0</span> lei</p>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>

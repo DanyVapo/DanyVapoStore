@@ -1,0 +1,29 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Age Verification</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="age-verification">
+    <h1>🔞 Age Verification</h1>
+    <p>You must be 18 years or older to enter this site.</p>
+    <div class="buttons">
+      <a href="index.html" class="btn">Yes, I am 18 or older</a>
+      <button onclick="denyAccess()" class="btn">No, I am under 18</button>
+    </div>
+	</div>
+
+  <script>
+    function denyAccess() {
+      alert("Access denied. You must be 18 or older to enter this site.");
+      document.body.innerHTML = "<h1 style='text-align:center; margin-top:20%;'>Access Denied</h1>";
+    }
+  </script>
+
+</body>
+</html>
